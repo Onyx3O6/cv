@@ -1,18 +1,21 @@
 header {
   text-align: center;
   background-image: url("./font.jpg");
+  color: #7d7d7d;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  opacity: 0, 6;
+  background-color: transparent;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 18px;
+  box-sizing: border-box;
 }
 p {
   text-align: justify;
@@ -22,39 +25,26 @@ h2 {
 }
 footer {
   text-align: center;
+  box-sizing: border-box;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px
+
 }
 
-.item1 {
-  grid-column: 1;
-  grid-row: 1;
-}
-.item2 {
-  grid-column: 1;
-  grid-row: 2;
-}
-.item3 {
-  grid-column: 1;
-  grid-row: 3;
-}
-.item4 {
-  grid-column: 2;
-  grid-row: 1;
-}
-.item5 {
-  grid-column: 2;
-  grid-row: 2;
+.sous-container {
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
 }
 
-.item6 {
-  grid-column: 2;
-  grid-row: 3;
-}
-.item7 {
-  grid-column: 2;
-  grid-row: 4;
+
+@media screen and (max-width =375px) {
+  body {
+    display:
+  }
 }

@@ -31,7 +31,7 @@ footer {
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px
+  gap: 10px;
 
 }
 
@@ -43,8 +43,16 @@ footer {
 }
 
 
-@media screen and (max-width =375px) {
-  body {
-    display:
+
+
+
+
+@media screen and (max-width =768px) {
+  .container{
+    display:grid;  
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(2fr);
+    gap: 10px;
+    }
   }
-}
+
